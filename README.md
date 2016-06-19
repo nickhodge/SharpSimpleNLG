@@ -37,11 +37,12 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 
 I am sure someone somewhere at sometime (most likely me) will find my [Learnings on Java to C#](https://github.com/nickhodge/SharpSimpleNLG/blob/master/JavaToCsharpLearnings.md) interesting and useful.
 
-## Future Work
+## Outstanding and Future Work
+* contribute _back_ to parent!
 * implement NIHLexicon and MultipleLexicon 
 * implement HTMLFormatter
 * re-work Unit test hierarchy
-* track simplenlg changes and additions
+* continue to track [*simplenlg*](https://github.com/simplenlg/simplenlg) changes and additions
 * fluent-style sentence and phrase creation
 * More C#/functional style
 * Enums.ToString() change to Enum "side" hierarchy (because of C#/Java differences)
