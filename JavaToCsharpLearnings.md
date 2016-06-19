@@ -1,6 +1,6 @@
 # Stuff encountered on the simplenlg journey to Csharp
 
-A quick search on Stackoverflow on conversion of Java to C# says "use these tools but it is best to hand-convert"
+A quick [search on StackOverflow](http://stackoverflow.com/questions/443010/where-can-i-find-a-java-to-c-sharp-converter?lq=1) on conversion of Java to C# says "use these tools but it is best to hand-convert"
 
 With this experience, I would agree with the "hand convert" as you learn so much more about how the code works.
 
