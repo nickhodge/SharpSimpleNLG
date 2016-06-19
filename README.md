@@ -20,7 +20,13 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 
 ## Building SharpSimpleNLG
 * Visual Studio 2015 with C# 6.0 recommended (as this is what I used)
-* Assembly created is .NET 4.5.2, but there is only use of generic HashSet<T>, Stack<T>, List<T> and Dictionary<K,V> with no async/await - so it should port to earlier .NET if you are into that sort of thing.
+* I've only used [C# null conditionals](https://msdn.microsoft.com/en-au/library/dn986595.aspx) and [string interpolation](https://msdn.microsoft.com/en-us/library/dn961160.aspx) in a couple of places so C# 6.0 isn't a forced requirement
+* Assembly created is .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
 
+## Unit Tests
+* >270 Unit tests using NUnit are here.
+* I've Unit tested my additional things
+* Passing Unit tests from the original project have been ported
+* 8 tests do not pass; I think this is related to the configuration of the Unit tests rather than a code issue.
 
 Questions? You can find me on Twitter [@RealNickHodge](https://twitter.com/RealNickHodge) or email [Nick Hodge](mailto:nhodge@mungr.com)
