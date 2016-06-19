@@ -37,4 +37,11 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 
 I am sure someone somewhere at sometime (most likely me) will find my [Learnings on Java to C#](https://github.com/nickhodge/SharpSimpleNLG/blob/master/JavaToCsharpLearnings.md) interesting and useful.
 
+## Future Work
+* track simplenlg changes and additions
+* fluent-style sentence and phrase creation
+* More C#/functional style
+* Enums.ToString() change to Enum "side" hierarchy (because of C#/Java differences)
+* smarter types (eg: widely used ```Dictionary<string, object>``` to subclassed to make life easier)
+
 Questions? You can find me on Twitter [@RealNickHodge](https://twitter.com/RealNickHodge) or email [Nick Hodge](mailto:nhodge@mungr.com)
