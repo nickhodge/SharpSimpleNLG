@@ -33,4 +33,8 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 * Passing Unit tests from the original project have been ported
 * 8 tests do not pass; I think this is related to the configuration of the Unit tests rather than a code issue.
 
+## Learnings
+
+I am sure someone somewhere at sometime (most likely me) will find my [Learnings on Java to C#](https://github.com/nickhodge/SharpSimpleNLG/blob/master/JavaToCsharpLearnings.md) interesting and useful.
+
 Questions? You can find me on Twitter [@RealNickHodge](https://twitter.com/RealNickHodge) or email [Nick Hodge](mailto:nhodge@mungr.com)
