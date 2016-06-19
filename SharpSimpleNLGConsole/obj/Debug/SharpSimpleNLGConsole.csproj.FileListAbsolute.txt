@@ -1,8 +1,0 @@
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\bin\Debug\SharpSimpleNLGConsole.exe.config
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\bin\Debug\SharpSimpleNLGConsole.exe
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\bin\Debug\SharpSimpleNLGConsole.pdb
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\bin\Debug\SharpSimpleNLG.dll
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\bin\Debug\SharpSimpleNLG.pdb
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\obj\Debug\SharpSimpleNLGConsole.csprojResolveAssemblyReference.cache
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\obj\Debug\SharpSimpleNLGConsole.exe
-C:\work\SharpSimpleNLG\SharpSimpleNLGConsole\obj\Debug\SharpSimpleNLGConsole.pdb
