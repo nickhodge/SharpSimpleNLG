@@ -1,5 +1,9 @@
 # SharpSimpleNLG
-SharpSimpleNLG is a C# port of the [University of Aberdeen *simplenlg* project](https://github.com/simplenlg/simplenlg)ttps://nuget.org/packages/SharpSimpleNLG)
+SharpSimpleNLG is a C# port of the [University of Aberdeen *simplenlg* project](https://github.com/simplenlg/simplenlg)
+
+
+## NuGet
+[SharpSimpleNLG](https://nuget.org/packages/SharpSimpleNLG)
 
 ```
 Install-Package SharpSimpleNLG
