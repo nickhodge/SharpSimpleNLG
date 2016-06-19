@@ -1,4 +1,4 @@
-# Stuff encountered on the simplenlg journey to C#
+# Stuff encountered on the simplenlg journey to Csharp
 
 ## Can't just rename from .java to .cs and recompile
 * like, der. don't know why you would expect this to just work
