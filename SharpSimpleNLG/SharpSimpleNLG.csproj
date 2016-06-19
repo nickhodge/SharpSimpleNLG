@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD418A41-A46E-4FD7-A6DB-FF3EBB4AFA29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpSimpleNLG</RootNamespace>
+    <AssemblyName>SharpSimpleNLG</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="format\NumberedPrefix.cs" />
+    <Compile Include="framework\IElementCategory.cs" />
+    <Compile Include="framework\InflectionSet.cs" />
+    <Compile Include="helperextensions\EqualsExtensions.cs" />
+    <Compile Include="helperextensions\HelperExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aggregation\AggregationHelper.cs" />
+    <Compile Include="aggregation\AggregationRule.cs" />
+    <Compile Include="aggregation\Aggregator.cs" />
+    <Compile Include="aggregation\BackwardConjunctionReductionRule.cs" />
+    <Compile Include="aggregation\ClauseCoordinationRule.cs" />
+    <Compile Include="aggregation\ForwardConjunctionReductionRule.cs" />
+    <Compile Include="aggregation\FunctionalSet.cs" />
+    <Compile Include="aggregation\NewAggregator.cs" />
+    <Compile Include="aggregation\Periphery.cs" />
+    <Compile Include="aggregation\PhraseChecker.cs" />
+    <Compile Include="aggregation\PhraseSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="features\ClauseStatus.cs" />
+    <Compile Include="features\DiscourseFunction.cs" />
+    <Compile Include="features\Feature.cs" />
+    <Compile Include="features\Form.cs" />
+    <Compile Include="features\Gender.cs" />
+    <Compile Include="features\Inflection.cs" />
+    <Compile Include="features\InternalFeature.cs" />
+    <Compile Include="features\InterrogativeType.cs" />
+    <Compile Include="features\LexicalFeature.cs" />
+    <Compile Include="features\NumberAgreement.cs" />
+    <Compile Include="features\Person.cs" />
+    <Compile Include="features\Tense.cs" />
+    <Compile Include="format\TextFormatter.cs" />
+    <Compile Include="framework\CoordinatedPhraseElement.cs" />
+    <Compile Include="framework\DocumentCategory.cs" />
+    <Compile Include="framework\DocumentElement.cs" />
+    <Compile Include="framework\InflectedWordElement.cs" />
+    <Compile Include="framework\LexicalCategory.cs" />
+    <Compile Include="framework\ListElement.cs" />
+    <Compile Include="framework\NLGElement.cs" />
+    <Compile Include="framework\NLGFactory.cs" />
+    <Compile Include="framework\NLGModule.cs" />
+    <Compile Include="framework\PhraseCategory.cs" />
+    <Compile Include="framework\PhraseElement.cs" />
+    <Compile Include="framework\StringElement.cs" />
+    <Compile Include="framework\WordElement.cs" />
+    <EmbeddedResource Include="lexicon\default-lexicon.xml" />
+    <Compile Include="lexicon\Lexicon.cs" />
+    <Compile Include="lexicon\LexiconInterface.cs" />
+    <Compile Include="lexicon\MultipleLexicon.cs" />
+    <Compile Include="format\HTMLFormatter.cs" />
+    <Content Include="lexicon\NIHDBLexicon.cs" />
+    <Compile Include="lexicon\XMLLexicon.cs" />
+    <Compile Include="morphology\DeterminerAgrHelper.cs" />
+    <Compile Include="morphology\MorphologyProcessor.cs" />
+    <Compile Include="morphology\MorphologyRules.cs" />
+    <Compile Include="orthography\OrthographyProcessor.cs" />
+    <Compile Include="phrasespec\AdjPhraseSpec.cs" />
+    <Compile Include="phrasespec\AdvPhraseSpec.cs" />
+    <Compile Include="phrasespec\NPPhraseSpec.cs" />
+    <Compile Include="phrasespec\PPPhraseSpec.cs" />
+    <Compile Include="phrasespec\SPhraseSpec.cs" />
+    <Compile Include="phrasespec\VPPhraseSpec.cs" />
+    <Compile Include="realiser\Realiser.cs" />
+    <Compile Include="syntax\ClauseHelper.cs" />
+    <Compile Include="syntax\CoordinatedPhraseHelper.cs" />
+    <Compile Include="syntax\NounPhraseHelper.cs" />
+    <Compile Include="syntax\PhraseHelper.cs" />
+    <Compile Include="syntax\SyntaxProcessor.cs" />
+    <Compile Include="syntax\VerbPhraseHelper.cs" />
+    <None Include="lexicon\util\NIHLexiconXMLDumpUtil.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
