@@ -21,6 +21,6 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 ## Building SharpSimpleNLG
 * Visual Studio 2015 with C# 6.0 recommended (as this is what I used)
 * Assembly created is .NET 4.5.2, but there is only use of generic HashSet<T>, Stack<T>, List<T> and Dictionary<K,V> with no async/await - so it should port to earlier .NET if you are into that sort of thing.
-* 
+
 
 Questions? You can find me on Twitter [@RealNickHodge](https://twitter.com/RealNickHodge) or email [Nick Hodge](mailto:nhodge@mungr.com)
