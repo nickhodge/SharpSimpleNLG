@@ -1,10 +1,10 @@
-SimpleNLG License
+SharpSimpleNLG License
 =================
 
-SimpleNLG is licensed under the terms and conditions of Mozilla Public License 1.1. 
+SharpSimpleNLG is licensed under the terms and conditions of Mozilla Public License 1.1. 
 
 Copyright (C) 2010-11 [The University of Aberdeen] (http://www.abdn.ac.uk).
-
+This C# Port Copyright (C) 2016 [Nick Hodge] (mailto:nhodge@mungr.com).
 
 MOZILLA PUBLIC LICENSE  Version 1.1
 ====================================
