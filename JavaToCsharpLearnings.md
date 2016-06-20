@@ -21,7 +21,7 @@ The simplenlg codebase is about 20KLOC; and I underestimated the time it would t
 
 This project had no external library dependencies (apart from JUnit) and used relatively well-known Java idioms and mechanisms. Taking something more complex and larger would probably blow this budget somewhat.
 
-Thankfully, simplenlg had an internal "object dumper" that generated a simple tree-like diagram of the object tree. This helped diagnose 25% of the bugs.
+Thankfully, simplenlg had an internal "object dumper" (```realiser.setDebugMode(true)```) that generated a simple tree-like diagram of the object tree. This helped diagnose 25% of the bugs.
 
 The text-editing and building portion of work was completed without building and instantiating the .java. Once Testing and debugging time came, it was easiest to fire up Eclipse and side by side debug line by line with Visual Studio. This as accomplished by ensuring all the .java passed the Unit tests; then tracing the same code through C#. Time consuming - but this helped diagnose 80% of the failing tests.
 
@@ -31,12 +31,13 @@ As a key part of this project is a 1Mb XML data file [default-lexicon.xml](https
 
 ## Enums are objects in Java 
 * which means that enums can be subclassed
-* when using as Keys in ```Dictionary<K,V>``` (expando-objects) all is well. Cannot do this in CSharp as they are not object types!
+* when using as Keys in ```Dictionary<K,V>``` (expando-objects) all is well. 
+* Cannot use different Enums in the same Dictionary as keys.
 * had to put wrap Enums (given unique ranges of ```int``` values) into an object hierarchy; and use ```.ToString()``` on object to get a Key
 * in a future version, would just use the ```int``` values as keys for faster processing
 
 ## .equals
-* mostly in [PhraseChecker.cs](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/aggregation/PhraseChecker.cs) there are places ```INGLElement```s, and their ```.getFeatures``` need to be checked to ensure they are equal.
+* mostly in [PhraseChecker.cs](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/aggregation/PhraseChecker.cs) there are places ```INGLElement```, and their ```.getFeatures``` need to be checked to ensure they are equal.
 * Rather than C# ```.Equals``` the object, which seems to generate a different result to Java (I have yet to research this in depth) I re-wrote the [.equals as extension methods](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/helperextensions/EqualsExtensions.cs) in a handful of cases; which under Unit testing resulted in the correct equals result.
 
 ## Regex is slightly different
