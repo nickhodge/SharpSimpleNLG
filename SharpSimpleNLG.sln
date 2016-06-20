@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLG", "SharpSimp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGConsole", "SharpSimpleNLGConsole\SharpSimpleNLGConsole.csproj", "{3F729462-5264-49B1-8043-EAA050A2B3ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B3B6ECC4-364C-462E-ACEB-EA8304C04F1F}"
+	ProjectSection(SolutionItems) = preProject
+		JavaToCsharpLearnings.md = JavaToCsharpLearnings.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
