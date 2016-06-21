@@ -54,10 +54,16 @@ namespace SimpleNLG
         // to set of words
         // with this variant
 
-        public XMLLexicon()
+        public XMLLexicon(string path = null)
         {
-            // createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
-            createLexiconFromPath(@"C:\work\SharpSimpleNLG\SharpSimpleNLGDotNetCore\lexicon\default- lexicon.xml");
+//            if (path == null) // try the embedded resource first
+//            {
+//                createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
+//            }
+//            else
+//            {
+                createLexiconFromPath(path);
+//            }
         }
 
         public void createLexiconFromPath(string path)

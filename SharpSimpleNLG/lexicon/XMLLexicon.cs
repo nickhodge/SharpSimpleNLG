@@ -55,24 +55,15 @@ namespace SimpleNLG
         // to set of words
         // with this variant
 
-        public XMLLexicon()
+        public XMLLexicon(string path = null)
         {
-             createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
-        }
-
-    public void createLexiconFromEmbeddedResource(string path)
-        {
-            var assembly = Assembly.GetAssembly(typeof(XMLLexicon));
-            try
+            if (path == null) // try the embedded resource first
             {
-                using (var sr = new StreamReader(assembly.GetManifestResourceStream(path)))
-                {
-                    createLexicon(sr.ReadToEnd());
-                }
+                createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
             }
-            catch (Exception ex)
+            else
             {
-                Debug.WriteLine(ex.ToString());
+                createLexiconFromPath(path);
             }
         }
 
@@ -82,6 +73,23 @@ namespace SimpleNLG
             {
                 var rawlexicontext = File.ReadAllText(path);
                 createLexicon(rawlexicontext);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+        }
+
+
+        public void createLexiconFromEmbeddedResource(string path)
+        {
+            var assembly = Assembly.GetAssembly(typeof(XMLLexicon));
+            try
+            {
+                using (var sr = new StreamReader(assembly.GetManifestResourceStream(path)))
+                {
+                    createLexicon(sr.ReadToEnd());
+                }
             }
             catch (Exception ex)
             {

@@ -46,11 +46,22 @@ namespace SimpleNLGTests.lexicon
 
 
         [Test]
-        public void setUp()
+        public void setUp_from_EmbeddedResource()
         {
             var timer = new Stopwatch();
             timer.Start();
             this.lexicon = new XMLLexicon();
+            timer.Stop();
+            Console.WriteLine($"Loading Lexicon took: {timer.ElapsedMilliseconds}ms");
+        }
+
+
+        [Test]
+        public void setUp_from_Filepath()
+        {
+            var timer = new Stopwatch();
+            timer.Start();
+            this.lexicon = new XMLLexicon(@"C:\work\SharpSimpleNLG\SharpSimpleNLGDotNetCore\lexicon\default-lexicon.xml");
             timer.Stop();
             Console.WriteLine($"Loading Lexicon took: {timer.ElapsedMilliseconds}ms");
         }

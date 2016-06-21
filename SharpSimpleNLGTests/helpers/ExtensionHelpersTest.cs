@@ -82,14 +82,13 @@ namespace SimpleNLGTests.helpers
         // ref: https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#trim()
         [TestCase("", ExpectedResult = "", TestName = "trim: null case")]
         [TestCase("cat", ExpectedResult = "cat", TestName = "trim: 3 chars")]
-        [TestCase(" \uFF19cat", ExpectedResult = "\uFF19cat",
-             TestName = "trim: 4 chars with Unicode, leading and trailing")]
+        [TestCase(" \uFF19cat", ExpectedResult = "\uFF19cat", TestName = "trim: 4 chars with Unicode, leading only")]
         [TestCase(" cat", ExpectedResult = "cat", TestName = "trim: 4 chars with leading space")]
         [TestCase("cat ", ExpectedResult = "cat", TestName = "trim: 4 chars with trailing space")]
         [TestCase(" cat ", ExpectedResult = "cat", TestName = "trim: 4 chars leading and trailing space")]
         [TestCase("\uFF19cat", ExpectedResult = "\uFF19cat", TestName = "trim: 4 chars with Unicode, leading spcae")]
         [TestCase(" \uFF19cat", ExpectedResult = "\uFF19cat",
-             TestName = "trim: 4 chars with Unicode, leading and trailing")]
+             TestName = "trim: 4 chars with Unicode, leading")]
         [TestCase("\uFF19cat ", ExpectedResult = "\uFF19cat",
              TestName = "trim: 4 chars with Unicode, leading and trailing")]
         [TestCase(" \uFF19cat ", ExpectedResult = "\uFF19cat", TestName = "trim: 4 chars with Unicode")]
@@ -214,8 +213,8 @@ namespace SimpleNLGTests.helpers
 
         // ref: https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#isEmpty()
         [TestCase("", ExpectedResult = true, TestName = "isEmpty: true")]
-        [TestCase(" ", ExpectedResult = false, TestName = "isEmpty: true")]
-        [TestCase("\uFF19", ExpectedResult = false, TestName = "isEmpty: true")]
+        [TestCase(" ", ExpectedResult = false, TestName = "isEmpty: false")]
+        [TestCase("\uFF19", ExpectedResult = false, TestName = "isEmpty: with Unicode false")]
         public bool isEmpty_ToCsharp(string s)
         {
             return s.isEmpty();
