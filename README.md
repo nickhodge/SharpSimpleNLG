@@ -27,6 +27,10 @@ Another approach to learning is to look at the Unit Tests and see what simplenlg
 * I've only used [C# null conditionals](https://msdn.microsoft.com/en-au/library/dn986595.aspx) and [string interpolation](https://msdn.microsoft.com/en-us/library/dn961160.aspx) in a couple of places so C# 6.0 isn't a forced requirement
 * Assembly created is .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
 
+## Other .NET versions
+* As at 20th June I added a .NET Core version. If you use this and need help - reach out. 
+* Next up to test: Mono
+
 ## Unit Tests
 * >270 Unit tests using NUnit are here.
 * I've Unit tested my additional things
