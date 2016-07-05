@@ -21,7 +21,7 @@ Version 1.0.0 First commit/NuGet:
 * Current release English, with no HTML generation nor NIHLexicon import
 
 ## How to Use SharpSimpleNLG?
-I have to write some good documentation. One day. 
+I have to write some good documentation.
 
 Look at the code in the [Syntax Tutorials Unit Test](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLGTests/syntax/TutorialTest.cs). All these pass, so it is a good starter.
 
@@ -37,7 +37,7 @@ Or look at the general Unit Tests and see what simplenlg can do: [SharpSimpleNLG
 
 ## What about other versions of .NET?
 * As at 20th June I added a .NET Core version. If you use this and need help - reach out. 
-* Next .NET platform is Mono
+* I have also built SharpSimpleNLG in Xamarin on Mono successfully.
 
 ## Unit Tests
 * >270 Unit tests using NUnit included.
