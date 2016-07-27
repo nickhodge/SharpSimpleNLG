@@ -29,6 +29,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Xml;
 using SimpleNLG.Extensions;
 
@@ -56,14 +57,14 @@ namespace SimpleNLG
 
         public XMLLexicon(string path = null)
         {
-//            if (path == null) // try the embedded resource first
-//            {
-//                createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
-//            }
-//            else
-//            {
+            if (path == null) // try the embedded resource first
+            {
+                createLexiconFromEmbeddedResource(@"SharpSimpleNLGDotNetCore.lexicon.default-lexicon.xml");
+            }
+            else
+            {
                 createLexiconFromPath(path);
-//            }
+            }
         }
 
         public void createLexiconFromPath(string path)
@@ -72,6 +73,21 @@ namespace SimpleNLG
             {
                 var rawlexicontext = File.ReadAllText(path);
                 createLexicon(rawlexicontext);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+        }
+        public void createLexiconFromEmbeddedResource(string path)
+        {
+            var assembly = typeof(XMLLexicon).GetTypeInfo().Assembly;
+            try
+            {
+                using (var sr = new StreamReader(assembly.GetManifestResourceStream(path)))
+                {
+                    createLexicon(sr.ReadToEnd());
+                }
             }
             catch (Exception ex)
             {

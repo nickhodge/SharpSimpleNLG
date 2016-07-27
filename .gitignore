@@ -82,8 +82,11 @@ publish
 # Publish Web Output
 *.Publish.xml
 
-# NuGet Packages Directory
+# NuGet
 packages
+*.nuget.props
+*.nuget.targets
+project.lock.json
 
 # Windows Azure Build Output
 csx
