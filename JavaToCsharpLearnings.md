@@ -35,6 +35,7 @@ As a key part of this project is a 1Mb XML data file [default-lexicon.xml](https
 * Cannot use different Enums in the same Dictionary as keys.
 * had to put wrap Enums (given unique ranges of ```int``` values) into an object hierarchy; and use ```.ToString()``` on object to get a Key
 * in a future version, would just use the ```int``` values as keys for faster processing
+* be careful with placement of extension methods and their namespace. Don't clog the base namespace
 
 ## .equals
 * mostly in [PhraseChecker.cs](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/aggregation/PhraseChecker.cs) there are places ```INGLElement```, and their ```.getFeatures``` need to be checked to ensure they are equal.
