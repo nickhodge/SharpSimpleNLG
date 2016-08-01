@@ -40,10 +40,6 @@ Or look at the general Unit Tests and see what simplenlg can do: [SharpSimpleNLG
 * I've only used [C# null conditionals](https://msdn.microsoft.com/en-au/library/dn986595.aspx) and [string interpolation](https://msdn.microsoft.com/en-us/library/dn961160.aspx) in a couple of places so C# 6.0 isn't a forced requirement
 * Assembly created is .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
 
-## What about other versions of .NET?
-* As at 20th June I added a .NET Core version. If you use this and need help - reach out. 
-* I have also built SharpSimpleNLG in Xamarin on Mono successfully.
-
 ## Unit Tests
 * >270 Unit tests using NUnit included.
 * Passing Unit tests from the original project have been ported
