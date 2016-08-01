@@ -106,13 +106,13 @@
     <Compile Include="syntax\VerbPhraseTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpSimpleNLG\SharpSimpleNLG.csproj">
-      <Project>{fd418a41-a46e-4fd7-a6db-ff3ebb4afa29}</Project>
-      <Name>SharpSimpleNLG</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\SharpSimpleNLGDotNet\SharpSimpleNLGDotNet45.csproj">
+      <Project>{fd418a41-a46e-4fd7-a6db-ff3ebb4afa29}</Project>
+      <Name>SharpSimpleNLGDotNet45</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpSimpleNLG\SharpSimpleNLG.csproj">
+    <ProjectReference Include="..\SharpSimpleNLGDotNet\SharpSimpleNLGDotNet45.csproj">
       <Project>{fd418a41-a46e-4fd7-a6db-ff3ebb4afa29}</Project>
-      <Name>SharpSimpleNLG</Name>
+      <Name>SharpSimpleNLGDotNet45</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

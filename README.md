@@ -11,6 +11,11 @@ Install-Package SharpSimpleNLG
 
 ## Version News
 
+Version 1.1.0:
+* Thanks to [PR from Andriy Svyrd](https://github.com/nickhodge/SharpSimpleNLG/pull/2) now supports .NET Standard 1.3. Added to NuGet package (I hope my packaging is OK!)
+* Renaming .csproj to ensure naming of assemblies is OK
+* Move all extension methods (on Enums, mainly) into the SimpleNLG.Extensions namespace to stop pollution (thanks for recommendation Andriy)
+
 Version 1.0.2:
 * Permit passing of path to ```default-lexicon.xml``` into the ```XMLLexicon``` constructor
 * thereby permitting a rough-draft (and untested) .NET Core port

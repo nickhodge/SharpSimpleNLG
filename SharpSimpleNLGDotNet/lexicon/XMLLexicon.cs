@@ -59,7 +59,7 @@ namespace SimpleNLG
         {
             if (path == null) // try the embedded resource first
             {
-                createLexiconFromEmbeddedResource(@"SharpSimpleNLGDotNetCore.lexicon.default-lexicon.xml");
+                createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
             }
             else
             {
@@ -79,9 +79,11 @@ namespace SimpleNLG
                 Debug.WriteLine(ex.ToString());
             }
         }
+
+
         public void createLexiconFromEmbeddedResource(string path)
         {
-            var assembly = typeof(XMLLexicon).GetTypeInfo().Assembly;
+            var assembly = Assembly.GetAssembly(typeof(XMLLexicon));
             try
             {
                 using (var sr = new StreamReader(assembly.GetManifestResourceStream(path)))
@@ -104,12 +106,12 @@ namespace SimpleNLG
             indexByVariant = new Dictionary<string, List<WordElement>>();
 
                 var doc = new XmlDocument();
-                doc.LoadXml(rawlexicontext);
+                doc.Load(new XmlTextReader(new StringReader(rawlexicontext)));
 
                 if (doc != null)
                 {
                     var lexRoot = doc.DocumentElement;
-                    var wordNodes = lexRoot.GetElementsByTagName("word");
+                    var wordNodes = lexRoot?.SelectNodes("//word");
                     for (var i = 0; i < wordNodes?.Count; i++)
                     {
                         var wordNode = wordNodes[i];
@@ -174,7 +176,7 @@ namespace SimpleNLG
             var inflections = new List<Inflection>();
 
             // now copy features
-            var nodes = wordNode.ChildNodes;
+            var nodes = wordNode.SelectNodes("*");
             for (var i = 0; i < nodes.Count; i++)
             {
                 var featureNode = nodes[i];
