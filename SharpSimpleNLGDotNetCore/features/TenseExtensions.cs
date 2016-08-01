@@ -25,28 +25,18 @@
  */
 
 
-namespace SimpleNLG
+namespace SimpleNLG.Extensions
 {
-    public enum Tense
+ 
+    public static class TenseExtensions
     {
-
-        /**
-         * The action described by the verb will happen in the future. For example,
-         * <em>John will kiss Mary</em>, <em>the dog will eat a bone</em>.
-         */
-        FUTURE,
-
-        /**
-         * The action described by the verb happened in the past. For example,
-         * <em>John kissed Mary</em>, <em>the dog ate a bone</em>.
-         */
-        PAST,
-
-        /**
-         * The action described by the verb is happening in the present time. For
-         * example, <em>John kisses Mary</em>, <em>the dog eats a bone</em>.
-         */
-        PRESENT
+        public static Tense ToTense(this string s)
+        {
+            if (s.ToUpperInvariant().Contains("PAST"))
+                return Tense.PAST;
+            if (s.ToUpperInvariant().Contains("FUTURE"))
+                return Tense.FUTURE;
+            return Tense.PRESENT;
+        }
     }
-
 }

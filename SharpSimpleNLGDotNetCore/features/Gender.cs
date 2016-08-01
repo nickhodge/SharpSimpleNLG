@@ -48,11 +48,4 @@ namespace SimpleNLG
         NEUTER
     }
 
-    public static class GenderEnumExtensions
-    {
-        public static int ordinal(this Gender g)
-        {
-            return (int)g;
-        }
-    }
 }

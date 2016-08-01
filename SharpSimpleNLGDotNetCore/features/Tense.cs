@@ -49,15 +49,4 @@ namespace SimpleNLG
         PRESENT
     }
 
-    public static class TenseExtensions
-    {
-        public static Tense ToTense(this string s)
-        {
-            if (s.ToUpperInvariant().Contains("PAST"))
-                return Tense.PAST;
-            if (s.ToUpperInvariant().Contains("FUTURE"))
-                return Tense.FUTURE;
-            return Tense.PRESENT;
-        }
-    }
 }
