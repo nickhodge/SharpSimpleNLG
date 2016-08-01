@@ -24,29 +24,13 @@
  *    - Any questions, comments, feedback on this port can be sent to Nick Hodge <nhodge@mungr.com>
  */
 
-namespace SimpleNLG
+namespace SimpleNLG.Extensions
 {
-    public enum Person
+     public static class GenderEnumExtensions
     {
-
-        /**
-         * The enumeration to show that the narration is written in the first
-         * person. First person narrative uses the personal pronouns of <em>I</em>
-         * and <em>we</em>.
-         */
-        FIRST,
-
-        /**
-         * The enumeration to show that the narration is written in the second
-         * person. Second person narrative uses the personal pronoun of <em>you</em>.
-         */
-        SECOND,
-
-        /**
-         * The enumeration to show that the narration is written in the third
-         * person. Third person narrative uses the personal pronouns of <em>he</em>, 
-         * <em>her</em> and <em>they</em>.
-         */
-        THIRD
+        public static int ordinal(this Gender g)
+        {
+            return (int)g;
+        }
     }
 }

@@ -49,21 +49,4 @@ namespace SimpleNLG
          */
         THIRD
     }
-
-    public static class PersonEnumExtensions
-    {
-        public static int ordinal(this Person p)
-        {
-            return (int) p;
-        }
-
-        public static Person ToPerson(this object s)
-        {
-             if (s.ToString().ToUpperInvariant().Contains("SECOND"))
-                return Person.SECOND;
-            if (s.ToString().ToUpperInvariant().Contains("THIRD"))
-                return Person.THIRD;
-            return Person.FIRST;
-        }
-    }
 }

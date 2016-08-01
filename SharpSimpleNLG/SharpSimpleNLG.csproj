@@ -41,6 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="features\FeatureExtensions.cs" />
+    <Compile Include="features\GenderExtensions.cs" />
+    <Compile Include="features\InflectionExtensions.cs" />
+    <Compile Include="features\InternalFeatureExtension.cs" />
+    <Compile Include="features\InterrogativeTypeExtensions.cs" />
+    <Compile Include="features\PersonExtensions.cs" />
+    <Compile Include="features\TenseExtensions.cs" />
     <Compile Include="format\NumberedPrefix.cs" />
     <Compile Include="framework\IElementCategory.cs" />
     <Compile Include="framework\InflectionSet.cs" />
