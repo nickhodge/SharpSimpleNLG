@@ -59,7 +59,7 @@ namespace SimpleNLG
         {
             if (path == null) // try the embedded resource first
             {
-                createLexiconFromEmbeddedResource(@"SharpSimpleNLGDotNetCore.lexicon.default-lexicon.xml");
+                createLexiconFromEmbeddedResource(@"SharpSimpleNLG.lexicon.default-lexicon.xml");
             }
             else
             {

@@ -25,7 +25,8 @@
  */
 
  using System.Text;
-using SimpleNLG.Extensions;
+ using SharpNLG.Extensions;
+ using SimpleNLG.Extensions;
 
 namespace SimpleNLG
 {

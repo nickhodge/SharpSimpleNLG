@@ -25,6 +25,7 @@
  */
 
 using System.Collections.Generic;
+using SharpNLG.Extensions;
 using SimpleNLG.Extensions;
 
 namespace SimpleNLG

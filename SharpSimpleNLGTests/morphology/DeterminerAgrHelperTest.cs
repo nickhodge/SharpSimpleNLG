@@ -25,6 +25,7 @@
  */
 
 using NUnit.Framework;
+using SharpNLG.Extensions;
 
 namespace SimpleNLGTests.external
 {
