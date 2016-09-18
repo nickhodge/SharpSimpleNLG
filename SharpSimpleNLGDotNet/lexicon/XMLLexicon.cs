@@ -71,8 +71,14 @@ namespace SimpleNLG
         {
             try
             {
-                var rawlexicontext = File.ReadAllText(path);
-                createLexicon(rawlexicontext);
+                using (var s = new StreamReader(File.Open(path,
+                    FileMode.Open,
+                    FileAccess.Read,
+                    FileShare.ReadWrite)))
+                {
+                    var rawlexicontext = s.ReadToEnd();
+                    createLexicon(rawlexicontext);
+                }
             }
             catch (Exception ex)
             {
