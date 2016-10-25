@@ -27,7 +27,7 @@ Thankfully, simplenlg had an internal "object dumper" (```realiser.setDebugMode(
 
 The text-editing and building portion of work was completed without building and instantiating the .java. Once Testing and debugging time came, it was easiest to fire up Eclipse and side by side debug line by line with Visual Studio. This as accomplished by ensuring all the .java passed the Unit tests; then tracing the same code through C#. Time consuming - but this helped diagnose 80% of the failing tests.
 
-The bugs caught in this manner included the foreach looping over ```Stack<T>``` being implemented differently in Java vs C# Collections; Regex differences; and the conundrum of .equals between the two languages/environments.
+The bugs caught in this manner included the foreach looping over ```Stack<T>``` being implemented differently in Java vs C# Collections; Regex differences; and the conundrum of ```.equals``` between the two languages/environments.
 
 As a key part of this project is a 1Mb XML data file [default-lexicon.xml](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/lexicon/default-lexicon.xml) -and- the initial use-case is a client-side application, using [IKVM](https://www.ikvm.net/) with its additional download weight was not an option.
 
@@ -56,7 +56,7 @@ As a key part of this project is a 1Mb XML data file [default-lexicon.xml](https
 ## But be careful with Semantics
 * Java .put will create a new ```HashMap``` KV pair, or replace the Value if the key already exists
 * In C#, you have to write around this - so the .put Extension method takes this into account
-* Changing ```foreach``` over an Interable seems easy enough (and easier in C#!) but semantics of this over a ```Stack<T>``` is different in C# (first vs. last!) Solved by .ToList().Reverse()
+* Changing ```foreach``` over an Interable seems easy enough (and easier in C#!) but semantics of this over a ```Stack<T>``` is different in C# (first vs. last!) Solved by ```.ToList().Reverse()```
 * big difference in Java ```String.substring``` vs. C# ```string.SubString``` (length vs. position as second param)
 * reading the Java docs, and ensuring the Extension methods follow the meanings became important for some deep bugs
 
