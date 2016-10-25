@@ -2,7 +2,7 @@
 
 A quick [search on StackOverflow](http://stackoverflow.com/questions/443010/where-can-i-find-a-java-to-c-sharp-converter?lq=1) on conversion of Java to C# says "use these tools but it is best to hand-convert"
 
-Now with experience, I would agree with the "hand convert" approaach: you learn so much more about how the underlying code works.
+Now with experience, I would agree with the "hand convert" approach: you learn so much more about how the underlying code works.
 
 The simplenlg codebase is about 20KLOC; and I underestimated the time it would take, because I had not done this style of conversion. I had mentally estimated about 5 days upon my outset.
 
@@ -10,6 +10,7 @@ The simplenlg codebase is about 20KLOC; and I underestimated the time it would t
 * like, der. don't know why you would expect this to just work. It doesn't
 * both languages as being typed, C- curly braced languages with many common features made the work easier (than say, a Python project)
 * process was made easier by flattening the namespace hierarchy into one
+* although by flattening the hierarchy, this meant poisoning by Extension methods as soon as the base namespace was imported - fixed in subsequent releases
 * good Tests meant that quality could be checked at the end
 
 ## Time Budget
