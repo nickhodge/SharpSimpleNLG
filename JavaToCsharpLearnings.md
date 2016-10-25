@@ -14,6 +14,11 @@ The simplenlg codebase is about 20KLOC; and I underestimated the time it would t
 * good Tests meant that quality could be checked at the end
 
 ## Actual vs. Budget Time
+
+There are three big problems in Computer Science. Naming projects (easy in this case), Cache Coherency and Time estimation.
+
+I failed in my initial 5 day estimate by +3 days. Ooops.
+
 * 3.5 days for 20KLOC across 100 files to "0 error build" (rename .java to .cs, fix all the textual stuff)
 * 0.5 days for additional "glue" code (Extension methods) and Unit tests
 * 0.5 days for build to actually pop out something sensible (fixing the big picture issues)
