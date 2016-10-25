@@ -13,20 +13,21 @@ The simplenlg codebase is about 20KLOC; and I underestimated the time it would t
 * although by flattening the hierarchy, this meant poisoning by Extension methods as soon as the base namespace was imported - fixed in subsequent releases
 * good Tests meant that quality could be checked at the end
 
-## Time Budget
+## Actual vs. Budget Time
 * 3.5 days for 20KLOC across 100 files to "0 error build" (rename .java to .cs, fix all the textual stuff)
 * 0.5 days for additional "glue" code (Extension methods) and Unit tests
 * 0.5 days for build to actually pop out something sensible (fixing the big picture issues)
 * 3.5 days of Unit tests (~270) working, finding and fixing lower-level idiomatic Java style issues eg: Regex
 * Estimate of 2KLOC per day
+* 8.0 days TOTAL
 
-This project had no external library dependencies (apart from JUnit) and used relatively well-known Java idioms and mechanisms. Taking something more complex and larger would probably blow this budget somewhat.
+This project had no external library dependencies (apart from [JUnit](http://junit.org/junit4/)) and used relatively well-known Java idioms and mechanisms. Taking something more complex and larger would probably blow this budget somewhat.
 
-Thankfully, simplenlg had an internal "object dumper" (```realiser.setDebugMode(true)```) that generated a simple tree-like diagram of the object tree. This helped diagnose 25% of the bugs.
+Thankfully, simplenlg had an internal "object dumper" (```realiser.setDebugMode(true)```) that generated a simple tree-like diagram of the object tree. This helped diagnose 25% of the initial bugs.
 
 The text-editing and building portion of work was completed without building and instantiating the .java. Once Testing and debugging time came, it was easiest to fire up Eclipse and side by side debug line by line with Visual Studio. This as accomplished by ensuring all the .java passed the Unit tests; then tracing the same code through C#. Time consuming - but this helped diagnose 80% of the failing tests.
 
-The bugs caught in this manner included the foreach looping over ```Stack<T>``` being different; the Regex differences; and the conundrum of .equals 
+The bugs caught in this manner included the foreach looping over ```Stack<T>``` being implemented differently in Java vs C# Collections; Regex differences; and the conundrum of .equals between the two languages/environments.
 
 As a key part of this project is a 1Mb XML data file [default-lexicon.xml](https://github.com/nickhodge/SharpSimpleNLG/blob/master/SharpSimpleNLG/lexicon/default-lexicon.xml) -and- the initial use-case is a client-side application, using [IKVM](https://www.ikvm.net/) with its additional download weight was not an option.
 
