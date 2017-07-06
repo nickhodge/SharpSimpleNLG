@@ -1,12 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGTests", "SharpSimpleNLGTests\SharpSimpleNLGTests.csproj", "{D786FBFE-CFBC-4DDA-B408-60ADD0731B6C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGConsole", "SharpSimpleNLGConsole\SharpSimpleNLGConsole.csproj", "{3F729462-5264-49B1-8043-EAA050A2B3ED}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B3B6ECC4-364C-462E-ACEB-EA8304C04F1F}"
 	ProjectSection(SolutionItems) = preProject
 		JavaToCsharpLearnings.md = JavaToCsharpLearnings.md
@@ -14,9 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGTests", "SharpSimpleNLGTests\SharpSimpleNLGTests.csproj", "{D786FBFE-CFBC-4DDA-B408-60ADD0731B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGConsole", "SharpSimpleNLGConsole\SharpSimpleNLGConsole.csproj", "{3F729462-5264-49B1-8043-EAA050A2B3ED}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGDotNet45", "SharpSimpleNLGDotNet\SharpSimpleNLGDotNet45.csproj", "{FD418A41-A46E-4FD7-A6DB-FF3EBB4AFA29}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SharpSimpleNLG", "SharpSimpleNLG\SharpSimpleNLG.xproj", "{16F344A8-B688-4D95-8DA6-2E207D47AECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLG", "SharpSimpleNLG\SharpSimpleNLG.csproj", "{16F344A8-B688-4D95-8DA6-2E207D47AECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

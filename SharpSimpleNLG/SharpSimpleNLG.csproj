@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>
+    <AssemblyName>SharpSimpleNLG</AssemblyName>
+    <PackageId>SharpSimpleNLG</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="lexicon\default-lexicon.xml" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="System.Collections" Version="4.0.11-*" />
+    <PackageReference Include="System.Console" Version="4.0.0-*" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.0.11-*" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.0.1-*" />
+    <PackageReference Include="System.Linq" Version="4.1.0-*" />
+    <PackageReference Include="System.Reflection.Extensions" Version="4.0.1-*" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.1.0-*" />
+    <PackageReference Include="System.Xml.XmlDocument" Version="4.0.1-*" />
+  </ItemGroup>
+
+</Project>
