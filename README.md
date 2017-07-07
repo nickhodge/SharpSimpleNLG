@@ -10,6 +10,8 @@ Install-Package SharpSimpleNLG
 ``` 
 
 ## Version News
+Version 1.2.0
+* Now supports .net standard 1.6 and full .net 4.6.2. Added to Nuget package.
 
 Version 1.1.1:
 * Thanks to [PR from Andriy Svyrd](https://github.com/nickhodge/SharpSimpleNLG/pull/2) now supports .NET Standard 1.3. Added to NuGet package (I hope my packaging is OK!)
