@@ -40,11 +40,10 @@ namespace SimpleNLGTests.syntax
 
         // set up a few more fixtures
         /** The s5. */
-        SPhraseSpec s1, s2, s3, s4;
 
 
         [SetUp]
-        protected void setUp()
+        protected override void setUp()
         {
 
             // // the man gives the woman John's flower

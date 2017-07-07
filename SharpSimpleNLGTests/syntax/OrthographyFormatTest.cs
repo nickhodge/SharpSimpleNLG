@@ -42,7 +42,7 @@ namespace SimpleNLGTests.syntax
         public string list2Realisation;
 
         [SetUp]
-        public void setUp()
+        public new void setUp()
         {
             list2Realisation = new StringBuilder("* in the room").append("\n* ").append(list1Realisation).append("\n").ToString();
 

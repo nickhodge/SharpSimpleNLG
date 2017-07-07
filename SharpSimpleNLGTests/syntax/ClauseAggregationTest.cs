@@ -42,7 +42,7 @@ namespace SimpleNLGTests.syntax
     {
         // set up a few more fixtures
         /** The s4. */
-        public SPhraseSpec s1, s2, s3, s4, s5, s6;
+        public SPhraseSpec s5, s6;
         public Aggregator aggregator = new Aggregator();
         public ClauseCoordinationRule coord  = new ClauseCoordinationRule();
         public ForwardConjunctionReductionRule fcr = new ForwardConjunctionReductionRule();
@@ -56,7 +56,7 @@ namespace SimpleNLGTests.syntax
          */
 
 		[SetUp]
-        protected void setUp()
+        protected override void setUp()
         {
             aggregator.initialise();
 

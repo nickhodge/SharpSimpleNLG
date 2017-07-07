@@ -68,7 +68,7 @@ namespace SimpleNLGTests.syntax
          */
 
         [SetUp]
-        protected void setUp()
+        protected virtual void setUp()
         {
             this.lexicon = Lexicon.getDefaultLexicon();
 
