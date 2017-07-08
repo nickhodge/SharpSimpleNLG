@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/yu970w2evwwkx0vt?svg=true)](https://ci.appveyor.com/project/Arash-Sabet/sharpsimplenlg)
 # SharpSimpleNLG
 SharpSimpleNLG is a C# port of the [University of Aberdeen *simplenlg* project](https://github.com/simplenlg/simplenlg). All thanks and acknowledgement for hard work goes to this team.
 
