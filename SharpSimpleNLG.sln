@@ -20,8 +20,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLG", "SharpSimp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLGConsoleNetCore", "SharpSimpleNLGConsoleNetCore\SharpSimpleNLGConsoleNetCore.csproj", "{3E619416-20EC-429F-A467-9F7BFE8BACB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGUnitTests", "SharpSimpleNLGUnitTests\SharpSimpleNLGUnitTests.csproj", "{F4C4C12D-F50D-46F4-9F53-F7C997AD97B8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,10 +46,6 @@ Global
 		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4C4C12D-F50D-46F4-9F53-F7C997AD97B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C4C12D-F50D-46F4-9F53-F7C997AD97B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C4C12D-F50D-46F4-9F53-F7C997AD97B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C4C12D-F50D-46F4-9F53-F7C997AD97B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
