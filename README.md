@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/yu970w2evwwkx0vt?svg=true)](https://ci.appveyor.com/project/Arash-Sabet/sharpsimplenlg)
+[![Build status](https://ci.appveyor.com/api/projects/status/bjwkwoqdlpcl1jir?svg=true)](https://ci.appveyor.com/project/Arash-Sabet/sharpsimplenlg-olve3)
 # SharpSimpleNLG
 SharpSimpleNLG is a C# port of the [University of Aberdeen *simplenlg* project](https://github.com/simplenlg/simplenlg). All thanks and acknowledgement for hard work goes to this team.
 
@@ -11,9 +11,6 @@ Install-Package SharpSimpleNLG
 ``` 
 
 ## Version News
-Version 1.2.0
-* Now supports .net standard 1.6 and full .net 4.6.2. Added to Nuget package.
-
 Version 1.2.0:
 * Thanks to [PR from Arash-Sabet](https://github.com/nickhodge/SharpSimpleNLG/pull/3) now supports .NET Standard 1.6 and .NET 4.6.2; along with VS2017 support. Added to NuGet package (I still hope my packaging is OK!)
 
