@@ -50,7 +50,7 @@ namespace SimpleNLGTests.syntax
          */
 
         [SetUp]
-        protected void setUp()
+        protected override void setUp()
         {
             p1 = this.phraseFactory.createClause("you", "be", "happy");
             p2 = this.phraseFactory.createClause("I", "be", "sad");

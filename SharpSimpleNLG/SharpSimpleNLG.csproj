@@ -13,6 +13,11 @@
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <Version>1.2.0</Version>
+    <PackageLicenseUrl>https://github.com/nickhodge/SharpSimpleNLG/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl />
+    <RepositoryUrl>https://github.com/nickhodge/SharpSimpleNLG</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
     <OutputPath>bin\$(Configuration)\$(Framework)</OutputPath>

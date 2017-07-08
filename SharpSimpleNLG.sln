@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGDotNet45", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLG", "SharpSimpleNLG\SharpSimpleNLG.csproj", "{16F344A8-B688-4D95-8DA6-2E207D47AECB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLGConsoleNetCore", "SharpSimpleNLGConsoleNetCore\SharpSimpleNLGConsoleNetCore.csproj", "{3E619416-20EC-429F-A467-9F7BFE8BACB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

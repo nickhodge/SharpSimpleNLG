@@ -66,6 +66,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="helpers\ExtensionHelpersTest.cs" />
+    <Compile Include="morphology\DeterminerAgrHelper.cs" />
+    <None Include="morphology\MorphologyProcessor.cs" />
+    <None Include="morphology\MorphologyRules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,9 +109,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpSimpleNLGDotNet\SharpSimpleNLGDotNet45.csproj">
-      <Project>{fd418a41-a46e-4fd7-a6db-ff3ebb4afa29}</Project>
-      <Name>SharpSimpleNLGDotNet45</Name>
+    <ProjectReference Include="..\SharpSimpleNLG\SharpSimpleNLG.csproj">
+      <Project>{16f344a8-b688-4d95-8da6-2e207d47aecb}</Project>
+      <Name>SharpSimpleNLG</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
