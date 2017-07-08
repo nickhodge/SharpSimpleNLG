@@ -14,6 +14,9 @@ Install-Package SharpSimpleNLG
 Version 1.2.0
 * Now supports .net standard 1.6 and full .net 4.6.2. Added to Nuget package.
 
+Version 1.2.0:
+* Thanks to [PR from Arash-Sabet](https://github.com/nickhodge/SharpSimpleNLG/pull/3) now supports .NET Standard 1.6 and .NET 4.6.2; along with VS2017 support. Added to NuGet package (I still hope my packaging is OK!)
+
 Version 1.1.1:
 * Thanks to [PR from Andriy Svyrd](https://github.com/nickhodge/SharpSimpleNLG/pull/2) now supports .NET Standard 1.3. Added to NuGet package (I hope my packaging is OK!)
 * Renaming .csproj to ensure naming of assemblies is OK
@@ -41,9 +44,9 @@ Or look at the general Unit Tests and see what simplenlg can do: [SharpSimpleNLG
 
 
 ## Building SharpSimpleNLG
-* Visual Studio 2015 with C# 6.0 recommended (as this is what I used)
+* Visual Studio 2017 with C# 6.0+ idioms used (as this is what I used)
 * I've only used [C# null conditionals](https://msdn.microsoft.com/en-au/library/dn986595.aspx) and [string interpolation](https://msdn.microsoft.com/en-us/library/dn961160.aspx) in a couple of places so C# 6.0 isn't a forced requirement
-* Assembly created is .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
+* Assembly created has a minimum of .NET Standard 1.3 / .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
 
 ## Unit Tests
 * >270 Unit tests using NUnit included.
