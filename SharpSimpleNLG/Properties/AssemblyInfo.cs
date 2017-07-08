@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SharpSimpleNLG")]
-[assembly: AssemblyCopyright("Copyright © 2016 Various Parties")]
+[assembly: AssemblyCopyright("Copyright © 2017 Various Parties")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
