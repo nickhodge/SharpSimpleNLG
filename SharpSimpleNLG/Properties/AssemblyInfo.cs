@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SharpSimpleNLG")]
 [assembly: AssemblyDescription("SharpSimpleNLG C# port of University of Aberdeen simplenlg")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Nick Hodge")]
 [assembly: AssemblyProduct("SharpSimpleNLG")]
-[assembly: AssemblyCopyright("Copyright © 2016-2017 Various Parties")]
+[assembly: AssemblyCopyright("Copyright © 2016-2021 Various Parties")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,5 +19,5 @@ using System.Runtime.InteropServices;
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
-[assembly: AssemblyVersion("1.2.0.0")]
-[assembly: AssemblyFileVersion("1.2.0.0")]
+[assembly: AssemblyVersion("1.3.0.0")]
+[assembly: AssemblyFileVersion("1.3.0.0")]

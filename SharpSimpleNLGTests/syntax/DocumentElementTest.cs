@@ -52,6 +52,8 @@ namespace SimpleNLGTests.syntax
         [SetUp]
         protected override void setUp()
         {
+            base.setUp();
+
             p1 = this.phraseFactory.createClause("you", "be", "happy");
             p2 = this.phraseFactory.createClause("I", "be", "sad");
             p3 = this.phraseFactory.createClause("they", "be", "nervous");
@@ -65,6 +67,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testBasics()
         {
+            setUp();
+
             var s1 = this.phraseFactory.createSentence(p1);
             var s2 = this.phraseFactory.createSentence(p2);
             var s3 = this.phraseFactory.createSentence(p3);
@@ -110,6 +114,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testEmbedding()
         {
+            setUp();
+
             var sent = this.phraseFactory.createSentence("This is a test");
             var sent2 = this.phraseFactory.createSentence(this.phraseFactory
                 .createClause("John", "be", "missing"));
@@ -125,6 +131,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testSections()
         {
+            setUp();
+
             // doc which contains a section, and two paras
             var doc = this.phraseFactory
                 .createDocument("Test Document");

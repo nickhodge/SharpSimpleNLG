@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B3B6ECC4-364C-462E-ACEB-EA8304C04F1F}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGTests", "Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGConsole", "SharpSimpleNLGConsole\SharpSimpleNLGConsole.csproj", "{3F729462-5264-49B1-8043-EAA050A2B3ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGDotNet45", "SharpSimpleNLGDotNet\SharpSimpleNLGDotNet45.csproj", "{FD418A41-A46E-4FD7-A6DB-FF3EBB4AFA29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSimpleNLGDotNet472", "SharpSimpleNLGDotNet\SharpSimpleNLGDotNet472.csproj", "{FD418A41-A46E-4FD7-A6DB-FF3EBB4AFA29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpSimpleNLG", "SharpSimpleNLG\SharpSimpleNLG.csproj", "{16F344A8-B688-4D95-8DA6-2E207D47AECB}"
 EndProject
@@ -42,8 +42,15 @@ Global
 		{16F344A8-B688-4D95-8DA6-2E207D47AECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F344A8-B688-4D95-8DA6-2E207D47AECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16F344A8-B688-4D95-8DA6-2E207D47AECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E619416-20EC-429F-A467-9F7BFE8BACB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89357D89-FE46-4FB9-92FD-EE18169CEB59}
 	EndGlobalSection
 EndGlobal

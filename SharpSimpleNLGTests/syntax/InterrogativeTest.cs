@@ -45,6 +45,7 @@ namespace SimpleNLGTests.syntax
         [SetUp]
         protected override void setUp()
         {
+            base.setUp();
 
             // // the man gives the woman John's flower
             var john = this.phraseFactory.createNounPhrase("John"); 
@@ -612,6 +613,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testAuxWHObjectQuestion()
         {
+            setUp();
+
             var p = this.phraseFactory.createClause(this.dog, "upset",
                 this.man);
 
@@ -656,6 +659,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testBeQuestions()
         {
+            setUp();
+
             var p = this.phraseFactory.createClause(
                 this.phraseFactory.createNounPhrase("a", "ball"),
                 this.phraseFactory.createWord("be", new LexicalCategory_VERB()),
@@ -695,6 +700,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testBeQuestionsFuture()
         {
+            setUp();
+
             var p = this.phraseFactory.createClause(
                 this.phraseFactory.createNounPhrase("a", "ball"),
                 this.phraseFactory.createWord("be", new LexicalCategory_VERB()),
@@ -736,6 +743,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testBeQuestionsPast()
         {
+            setUp();
+
             var p = this.phraseFactory.createClause(
                 this.phraseFactory.createNounPhrase("a", "ball"),
                 this.phraseFactory.createWord("be", new LexicalCategory_VERB()),
@@ -777,6 +786,8 @@ namespace SimpleNLGTests.syntax
 
         public void testSimpleBeWHQuestions()
         {
+            setUp();
+
             var p = this.phraseFactory.createClause("I", "be");
 
             p.setFeature(Feature.INTERROGATIVE_TYPE.ToString(), InterrogativeType.WHERE);
@@ -797,6 +808,8 @@ namespace SimpleNLGTests.syntax
         [Test]
         public void testHowPredicateQuestion()
         {
+            setUp();
+
             var test = this.phraseFactory.createClause();
             var subject = this.phraseFactory.createNounPhrase("You");
 

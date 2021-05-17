@@ -26,9 +26,9 @@
 
 using System;
 using System.Diagnostics;
-using FluentAssertions;
 using NUnit.Framework;
 using SimpleNLG;
+using Shouldly;
 
 namespace SimpleNLGTests.lexicon
 {
@@ -105,10 +105,10 @@ namespace SimpleNLGTests.lexicon
             this.lexicon = new XMLLexicon();
 
             var w = lexicon.getWords("man");
-            w.Count.ShouldBeEquivalentTo(1);
-            w[0].getBaseForm().ShouldBeEquivalentTo("man");
-            w[0].features.Count.ShouldBeEquivalentTo(2);
-            w[0].getId().ShouldBeEquivalentTo("E0038767");
+            w.Count.ShouldBe(1);
+            w[0].getBaseForm().ShouldBe("man");
+            w[0].features.Count.ShouldBe(2);
+            w[0].getId().ShouldBe("E0038767");
         }
 
         [Test]
@@ -119,7 +119,7 @@ namespace SimpleNLGTests.lexicon
             var id = w.getId();
             Assert.IsNotNull(id);
             Assert.IsNotEmpty(id);
-            id.ShouldBeEquivalentTo("E0038767");
+            id.ShouldBe("E0038767");
         }
 
         [Test]
@@ -128,7 +128,7 @@ namespace SimpleNLGTests.lexicon
             this.lexicon = new XMLLexicon();
             var w1 = lexicon.lookupWord("man", new LexicalCategory_NOUN());
             var w2 = w1.getFeature(LexicalFeature.PLURAL.ToString());
-            w2.ShouldBeEquivalentTo("men");
+            w2.ShouldBe("men");
         }
 
 
@@ -139,15 +139,15 @@ namespace SimpleNLGTests.lexicon
             var w = lexicon.getWordsFromVariant("did");
             var resw = w[0];
             Assert.IsNotNull(resw);
-            resw.getAllFeatures().Count.ShouldBeEquivalentTo(8);
+            resw.getAllFeatures().Count.ShouldBe(8);
             var form1 = resw.getFeature(LexicalFeature.PAST);
-            form1.ShouldBeEquivalentTo("did");
+            form1.ShouldBe("did");
             var form2 = resw.getFeature(LexicalFeature.PRESENT3S);
-            form2.ShouldBeEquivalentTo("does");
+            form2.ShouldBe("does");
             var form3 = resw.getFeature(LexicalFeature.PAST_PARTICIPLE);
-            form3.ShouldBeEquivalentTo("done");
+            form3.ShouldBe("done");
             var form4 = resw.getFeature(LexicalFeature.PRESENT_PARTICIPLE);
-            form4.ShouldBeEquivalentTo("doing");
+            form4.ShouldBe("doing");
         }
         
     }

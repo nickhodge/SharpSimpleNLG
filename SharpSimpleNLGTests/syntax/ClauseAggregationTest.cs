@@ -58,6 +58,8 @@ namespace SimpleNLGTests.syntax
 		[SetUp]
         protected override void setUp()
         {
+            base.setUp();
+
             aggregator.initialise();
 
             // the woman kissed the man behind the curtain
