@@ -26,7 +26,7 @@
 
 namespace SimpleNLG.Extensions
 {
-     public static class GenderEnumExtensions
+    internal static class GenderEnumExtensions
     {
         public static int ordinal(this Gender g)
         {

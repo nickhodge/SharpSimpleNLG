@@ -32,7 +32,7 @@ namespace SimpleNLG
     }
 
 
-    public static class DocumentCategoryExtensions {
+    internal static class DocumentCategoryExtensions {
         public static bool hasSubPart(this IElementCategory sourceElementCategory, IElementCategory elementCategory)
         {
             var subPart = false;

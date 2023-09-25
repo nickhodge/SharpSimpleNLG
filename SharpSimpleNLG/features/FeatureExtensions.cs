@@ -26,8 +26,8 @@
 
 namespace SimpleNLG.Extensions
 {
-   
-    public static class FeatureExtensions
+
+    internal static class FeatureExtensions
     {
         public static string ToString(this Feature f)
         {

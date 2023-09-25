@@ -29,7 +29,7 @@ using System.Linq;
 
 namespace SimpleNLG.Extensions
 {
-    public static class EqualsExtensions
+    internal static class EqualsExtensions
     {
         public static bool equals(this Dictionary<string, object> s, Dictionary<string, object> d)
         {

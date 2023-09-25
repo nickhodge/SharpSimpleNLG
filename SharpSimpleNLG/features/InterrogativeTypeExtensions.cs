@@ -37,7 +37,7 @@ namespace SimpleNLG.Extensions
      *         <code>false</code> otherwise.
      */
 
-    public static class InterrogativeTypeExtensions
+    internal static class InterrogativeTypeExtensions
     {
         /**
          * A method to determine if the {@code InterrogativeType} is a question

@@ -26,7 +26,7 @@
 
 namespace SimpleNLG.Extensions
 {
-    public static class PersonEnumExtensions
+    internal static class PersonEnumExtensions
     {
         public static int ordinal(this Person p)
         {
