@@ -13,13 +13,14 @@
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <PackageLicenseUrl>https://github.com/nickhodge/SharpSimpleNLG/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/nickhodge/SharpSimpleNLG</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nickhodge/SharpSimpleNLG</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Nick Hodge</Authors>
+    <Title>SharpSimpleNLG C# port SimpleNLG</Title>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
     <OutputPath>bin\$(Configuration)\$(Framework)</OutputPath>

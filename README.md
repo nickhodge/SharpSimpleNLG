@@ -2,6 +2,7 @@
 # SharpSimpleNLG
 SharpSimpleNLG is a C# port of the [University of Aberdeen *simplenlg* project](https://github.com/simplenlg/simplenlg). All thanks and acknowledgement for hard work goes to this team.
 
+> Please note that this port is behind the most current original *simplenlg* project.
 
 ## NuGet
 [SharpSimpleNLG](https://nuget.org/packages/SharpSimpleNLG)
@@ -11,6 +12,10 @@ Install-Package SharpSimpleNLG
 ``` 
 
 ## Version News
+Version 1.3.0:
+* Thanks to [PR from Michael Paulus](https://github.com/nickhodge/SharpSimpleNLG/pull/4) Updated extensions to be internal so consuming projects don't pick them up. 
+
+
 Version 1.2.0:
 * Thanks to [PR from Arash-Sabet](https://github.com/nickhodge/SharpSimpleNLG/pull/3) now supports .NET Standard 1.6 and .NET 4.6.2; along with VS2017 support. Added to NuGet package (I still hope my packaging is OK!)
 
@@ -41,9 +46,9 @@ Or look at the general Unit Tests and see what simplenlg can do: [SharpSimpleNLG
 
 
 ## Building SharpSimpleNLG
-* Visual Studio 2017 with C# 6.0+ idioms used (as this is what I used)
+* Visual Studio 2022 with C# 6.0+ idioms used (as this is what I used)
 * I've only used [C# null conditionals](https://msdn.microsoft.com/en-au/library/dn986595.aspx) and [string interpolation](https://msdn.microsoft.com/en-us/library/dn961160.aspx) in a couple of places so C# 6.0 isn't a forced requirement
-* Assembly created has a minimum of .NET Standard 1.3 / .NET 4.5.2, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
+* Assembly created has a minimum of .NET Standard 2.0 / .NET 4.6, but there is only use of generic ```HashSet<T>```, ```Stack<T>```, ```List<T>``` and ```Dictionary<K,V>``` with no async/await - so it should port to earlier .NET if you are into that sort of thing.
 
 ## Unit Tests
 * >270 Unit tests using NUnit included.
@@ -66,5 +71,3 @@ I am sure someone somewhere at sometime (most likely me) will find my [Learnings
 * Enums.ToString() change to Enum "side" hierarchy (because of C#/Java differences)
 * smarter types (eg: widely used ```Dictionary<string, object>``` to subclassed to make life easier)
 * Documentation specific to this port
-
-Questions? You can find me on Twitter [@RealNickHodge](https://twitter.com/RealNickHodge) or email [Nick Hodge](mailto:nhodge@mungr.com)
