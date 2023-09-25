@@ -34,6 +34,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+  	<InternalsVisibleTo Include="SharpSimpleNLGTests" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="lexicon\default-lexicon.xml" />
   </ItemGroup>
 

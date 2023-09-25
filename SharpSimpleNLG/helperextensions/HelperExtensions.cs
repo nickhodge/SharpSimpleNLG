@@ -37,8 +37,8 @@ namespace SimpleNLG.Extensions
      Not a complete implementation of C# to Java - just for SimpleNLG
      Nick Hodge nhodge@mungr.com
     */
-    
-    public static class HelperExtensions
+
+    internal static class HelperExtensions
     {
         // for chars 
         public static bool isDigit(this char c)

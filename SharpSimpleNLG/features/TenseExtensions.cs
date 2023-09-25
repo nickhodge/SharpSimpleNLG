@@ -27,8 +27,8 @@
 
 namespace SimpleNLG.Extensions
 {
- 
-    public static class TenseExtensions
+
+    internal static class TenseExtensions
     {
         public static Tense ToTense(this string s)
         {
